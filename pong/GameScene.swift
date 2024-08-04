@@ -259,12 +259,3 @@ private extension GameScene {
         ball.physicsBody?.applyImpulse(CGVector(dx: 10, dy: 10))
     }
 }
-
-// MARK: - SKPhysicsContactDelegate
-
-extension GameScene {
-    func didBegin(_ contact: SKPhysicsContact) {
-        if contact.bodyA.categoryBitMask == PhysicsCategory.Ball || contact.bodyB.categoryBitMask == PhysicsCategory.Ball {
-        }
-    }
-}
