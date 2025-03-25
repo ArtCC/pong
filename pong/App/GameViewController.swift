@@ -7,7 +7,7 @@
 
 import SpriteKit
 
-class GameViewController: UIViewController {
+final class GameViewController: UIViewController {
     // MARK: - Life's cycle
 
     override func viewDidLoad() {
