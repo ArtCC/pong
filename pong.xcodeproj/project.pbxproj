@@ -15,6 +15,12 @@
 		80BB1AD92BF8FD9C00A2D669 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 80BB1AD82BF8FD9C00A2D669 /* Base */; };
 		80BB1ADB2BF8FD9C00A2D669 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80BB1ADA2BF8FD9C00A2D669 /* Assets.xcassets */; };
 		80BB1ADE2BF8FD9C00A2D669 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 80BB1ADD2BF8FD9C00A2D669 /* Base */; };
+		80FFA9F82D93E95300BB8BC6 /* ScoreLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FFA9F72D93E95300BB8BC6 /* ScoreLabel.swift */; };
+		80FFA9FB2D93EAE900BB8BC6 /* DifficultyLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FFA9FA2D93EAE900BB8BC6 /* DifficultyLevel.swift */; };
+		80FFA9FD2D93EAF400BB8BC6 /* PhysicsCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FFA9FC2D93EAF400BB8BC6 /* PhysicsCategory.swift */; };
+		80FFA9FF2D93EAFF00BB8BC6 /* SpriteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FFA9FE2D93EAFF00BB8BC6 /* SpriteType.swift */; };
+		80FFAA022D93EB5300BB8BC6 /* DifficultyIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FFAA012D93EB5300BB8BC6 /* DifficultyIndicator.swift */; };
+		80FFAA042D93ECD700BB8BC6 /* NodeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FFAA032D93ECD700BB8BC6 /* NodeFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +33,12 @@
 		80BB1AD82BF8FD9C00A2D669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		80BB1ADA2BF8FD9C00A2D669 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80BB1ADD2BF8FD9C00A2D669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		80FFA9F72D93E95300BB8BC6 /* ScoreLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreLabel.swift; sourceTree = "<group>"; };
+		80FFA9FA2D93EAE900BB8BC6 /* DifficultyLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyLevel.swift; sourceTree = "<group>"; };
+		80FFA9FC2D93EAF400BB8BC6 /* PhysicsCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsCategory.swift; sourceTree = "<group>"; };
+		80FFA9FE2D93EAFF00BB8BC6 /* SpriteType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteType.swift; sourceTree = "<group>"; };
+		80FFAA012D93EB5300BB8BC6 /* DifficultyIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyIndicator.swift; sourceTree = "<group>"; };
+		80FFAA032D93ECD700BB8BC6 /* NodeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +75,8 @@
 			children = (
 				80BB1ACD2BF8FD9C00A2D669 /* AppDelegate.swift */,
 				80BB1AD52BF8FD9C00A2D669 /* GameViewController.swift */,
+				80FFA9F92D93EADF00BB8BC6 /* Models */,
+				80FFAA002D93EB2E00BB8BC6 /* Nodes */,
 				80B711202D92D2730019391C /* Scenes */,
 			);
 			path = App;
@@ -101,6 +115,26 @@
 				80B7111E2D92D2560019391C /* UI */,
 			);
 			path = pong;
+			sourceTree = "<group>";
+		};
+		80FFA9F92D93EADF00BB8BC6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				80FFA9FA2D93EAE900BB8BC6 /* DifficultyLevel.swift */,
+				80FFA9FC2D93EAF400BB8BC6 /* PhysicsCategory.swift */,
+				80FFA9FE2D93EAFF00BB8BC6 /* SpriteType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		80FFAA002D93EB2E00BB8BC6 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				80FFAA012D93EB5300BB8BC6 /* DifficultyIndicator.swift */,
+				80FFAA032D93ECD700BB8BC6 /* NodeFactory.swift */,
+				80FFA9F72D93E95300BB8BC6 /* ScoreLabel.swift */,
+			);
+			path = Nodes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,10 +210,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80FFAA042D93ECD700BB8BC6 /* NodeFactory.swift in Sources */,
 				80BB1AD42BF8FD9C00A2D669 /* GameScene.swift in Sources */,
 				80BB1AD62BF8FD9C00A2D669 /* GameViewController.swift in Sources */,
 				80BB1ACE2BF8FD9C00A2D669 /* AppDelegate.swift in Sources */,
+				80FFA9FB2D93EAE900BB8BC6 /* DifficultyLevel.swift in Sources */,
+				80FFA9FF2D93EAFF00BB8BC6 /* SpriteType.swift in Sources */,
+				80FFAA022D93EB5300BB8BC6 /* DifficultyIndicator.swift in Sources */,
+				80FFA9F82D93E95300BB8BC6 /* ScoreLabel.swift in Sources */,
 				80B7111C2D92D1A90019391C /* StartScene.swift in Sources */,
+				80FFA9FD2D93EAF400BB8BC6 /* PhysicsCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
